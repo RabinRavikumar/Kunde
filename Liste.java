@@ -4,7 +4,7 @@ public class Liste{
   public Liste(){
     anfrage = new Queue();
     }
-  public void neueAnfrage(Kunde pKunde) {
+  public void neueAnfrage(Kunde pKunde){
     anfrage.enqueue(pKunde);
     pKunde.ausgabeKundenanfrage();
   }
@@ -23,13 +23,4 @@ public class Liste{
       ausgabekundeanfrage();
     } // end of while
     }
-  public static void main(String[]args) {
-    Kunde eins = new Kunde("Anfrage");
-    Kunde zwei = new Kunde("Preis");
-    Liste test = new Liste();
-    test.neueAnfrage(eins);
-    test.neueAnfrage(zwei);
-    System.out.println();
-    test.ausgabealleAnfragen();
-  }
   }
