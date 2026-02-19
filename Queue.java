@@ -1,19 +1,17 @@
 public class Queue{
-
   private Element first;
   private Element last;
   
   public Queue(){
-  
+    first = null;
+    last = null
     }
-    
   public Object front(){
     if (isEmpty()) {
       return null;
     } // end of if
     return first.getValue();
     }
-    
   public void enqueue(Object pObject){
     if (pObject!=null) {
       Element element=new Element(pObject,null);
@@ -24,8 +22,7 @@ public class Queue{
       } // end of if-else
       last=element;
     }
-    } 
-    
+    }  
   public void dequeue(){
     if (!isEmpty()) {
       first=first.getNext();
@@ -33,11 +30,8 @@ public class Queue{
         last=first;
       } // end of if
     }
-  }
-    
+  } 
   public boolean isEmpty(){
     return first==null;
     }        
-
-
   }
