@@ -1,3 +1,8 @@
+/**
+Die Klasse Element stellt ein einzelnes Element dar.
+Sie speichert einen Wert (Object) und ermöglischt den
+zugriff auf das nächste Element in der Dynamischen Datenstrukturen.
+**/
 public class Element{
   private Object value;
   private Element next;
@@ -18,4 +23,5 @@ public class Element{
   public void setNext(Element pNext){
     next = pNext;
     }
+
   }
