@@ -1,3 +1,10 @@
+/**
+Die Klasse Liste verwaltet Kundenanfragen mithilfe einer Queue.
+Neue Anfragen werden der Queue hinzugefügt, einzelne Anfragen
+können ausgegeben und entfernt werden, und es besteht die
+Möglichkeit, alle gespeicherten Anfragen nacheinander
+abzuarbeiten.
+**/
 public class Liste{
   private Queue anfrage;
   
@@ -24,3 +31,4 @@ public class Liste{
     } // end of while
     }
   }
+
